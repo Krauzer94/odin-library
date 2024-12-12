@@ -4,3 +4,10 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: Cantarell, "Segoe UI";
+  background-color: #404040;
+  margin: 0;
+  padding: 0;
+}
