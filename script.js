@@ -15,12 +15,17 @@ function addBookToLibrary(author, title, pages, status) {
   myLibrary.push(newBook);
 }
 
+// Display previously added books
+function displayMyLibrary(myLibraryArray) {
+  for (let i = 0; i < myLibraryArray.length; i++) {
+    console.log(`Book [#${[([i + 1])]}]: ${myLibraryArray[i]}`);
+  };
+}
+
 // Manually add a couple of books
 addBookToLibrary("Epictetus", "The Handbook", 123, true);
 addBookToLibrary("Meditations", "Marcus Aurelius", 231, true);
 addBookToLibrary("Snow Crash", "Neal Stephenson", 440, false);
 
-// Display previously added books
-console.log(myLibrary[0]);
-console.log(myLibrary[1]);
-console.log(myLibrary[2]);
+// Manually display the added books
+displayMyLibrary(myLibrary);
