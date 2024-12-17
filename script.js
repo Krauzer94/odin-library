@@ -7,6 +7,11 @@ function Book(author, title, pages, status) {
   this.title = title;
   this.pages = pages;
   this.status = status; // 'Read' or 'Not read'
+
+  // Display attributes when printed
+  this.toString = function() {
+    return `${this.title}\nAuthor: ${this.author}\nPages: ${this.pages}\nStatus: ${this.status ? 'Read' : 'Not read'}`;
+  };
 }
 
 // Add Book objects to the library
@@ -17,15 +22,17 @@ function addBookToLibrary(author, title, pages, status) {
 
 // Display previously added books
 function displayMyLibrary(myLibraryArray) {
+  // Print added books into the console
+  console.log(`Books added to the library:`)
   for (let i = 0; i < myLibraryArray.length; i++) {
-    console.log(`Book [#${[([i + 1])]}]: ${myLibraryArray[i]}`);
+    console.log(`[#${[([i + 1])]}]: ${myLibraryArray[i]}`);
   };
 }
 
 // Manually add a couple of books
 addBookToLibrary("Epictetus", "The Handbook", 123, true);
-addBookToLibrary("Meditations", "Marcus Aurelius", 231, true);
-addBookToLibrary("Snow Crash", "Neal Stephenson", 440, false);
+addBookToLibrary("Marcus Aurelius", "Marcus Aurelius", 231, true);
+addBookToLibrary("Neal Stephenson", "Snow Crash", 440, false);
 
 // Manually display the added books
 displayMyLibrary(myLibrary);
