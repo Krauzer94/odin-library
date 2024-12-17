@@ -27,6 +27,9 @@ function displayMyLibrary(myLibraryArray) {
   for (let i = 0; i < myLibraryArray.length; i++) {
     console.log(`[#${[([i + 1])]}]: ${myLibraryArray[i]}`);
   };
+
+  // TODO: Display added books into page elements
+  // WIP...
 }
 
 // Manually add a couple of books
