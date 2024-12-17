@@ -15,6 +15,12 @@ function addBookToLibrary(author, title, pages, status) {
   myLibrary.push(newBook);
 }
 
-// The Handbook
+// Manually add a couple of books
 addBookToLibrary("Epictetus", "The Handbook", 123, true);
+addBookToLibrary("Meditations", "Marcus Aurelius", 231, true);
+addBookToLibrary("Snow Crash", "Neal Stephenson", 440, false);
+
+// Display previously added books
 console.log(myLibrary[0]);
+console.log(myLibrary[1]);
+console.log(myLibrary[2]);
