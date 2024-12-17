@@ -31,7 +31,7 @@ function displayMyLibrary(myLibraryArray) {
 
 // Manually add a couple of books
 addBookToLibrary("Epictetus", "The Handbook", 123, true);
-addBookToLibrary("Marcus Aurelius", "Marcus Aurelius", 231, true);
+addBookToLibrary("Marcus Aurelius", "Meditations", 231, true);
 addBookToLibrary("Neal Stephenson", "Snow Crash", 440, false);
 
 // Manually display the added books
