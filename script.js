@@ -72,3 +72,9 @@ addBookToLibrary("Marcus Aurelius", "Meditations", 231, true);
 
 // Manually display the added books
 displayMyLibrary(myLibrary);
+
+// TODO: add book via button interaction
+const addBookBtn = document.querySelector('.add-book-btn');
+addBookBtn.addEventListener('click', () => {
+  alert('TODO: add book via button interaction');
+});
