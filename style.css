@@ -49,3 +49,36 @@ p {
   border-radius: 12px;
   background-color: #1DA1F2;
 }
+
+/* Dialog box element */
+.addBookDialog {
+  border-radius: 12px;
+}
+
+/* Add book form section */
+.addBookForm {
+  height: 240px;
+  width: 360px;
+  padding: 12px 24px;
+  background-color: #404040;
+}
+
+/* Form fields container */
+.addBookFields {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+  background-color: #404040;
+}
+
+/* Input fields defaults */
+input {
+  color: black;
+  border-radius: 12px;
+  padding: 12px 6px;
+}
+
+/* Temporary for visualization */
+.blackBtn, #showDialog {
+  color: black;
+}
