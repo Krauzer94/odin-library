@@ -17,6 +17,29 @@
   <div class="add-book">
     <button class="add-book-btn">Add Book</button>
   </div>
+  <!-- A modal dialog containing a form -->
+  <dialog class="addBookDialog" id="favDialog">
+    <form class="addBookForm">
+      <!-- Book information fields -->
+      <div class="addBookFields">
+        <label for="bookTitle">Title</label>
+        <input id="bookTitle" name="bookTitle" type="text">
+        <label for="bookAuthor">Author</label>
+        <input id="bookAuthor" name="bookAuthor" type="text">
+        <label for="bookPages">Pages</label>
+        <input id="bookPages" name="bookPages" type="number">
+        <label for="bookStatus">Read</label>
+        <input id="bookStatus" name="bookStatus" type="checkbox">
+      <div class="addBookButtons">
+        <button class="blackBtn" value="cancel" formmethod="dialog">Cancel</button>
+        <button class="blackBtn" id="confirmBtn" value="default">Confirm</button>
+      </div>
+    </form>
+  </dialog>
+  <p>
+    <button id="showDialog">Show the dialog</button>
+  </p>
+  <output></output>
   <script src="script.js"></script>
 </body>
 
