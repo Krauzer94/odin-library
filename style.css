@@ -83,3 +83,9 @@ input {
 .blackBtn, #showDialog {
   color: black;
 }
+
+/* Checkbox minimum size */
+input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+}
