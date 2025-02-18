@@ -112,16 +112,20 @@ dialog {
   grid-template-columns: 1fr 1fr;
   gap:24px;
   > button {
-    font-weight: 600;
+    font-weight: 550;
     font-size: 16px;
     border-radius: 8px;
     color: white;
   }
 }
 
-/* Cancel and confirm buttons */
+/* Cancel/Confirm btns regular */
 .cancel-btn  { background-color: #C83D2E; }
 .confirm-btn { background-color: #4A90E2; }
+
+/* Cancel/Confirm btns hover */
+.cancel-btn:hover  { background-color: #C0392B; }
+.confirm-btn:hover { background-color: #357ABD; }
 
 /* Temporary trigger for modal */
 .show-dialog-btn {
