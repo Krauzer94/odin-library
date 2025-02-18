@@ -18,29 +18,29 @@
     <button class="add-book-btn">Add Book</button>
   </div>
   <!-- A modal dialog containing a form -->
-  <dialog class="addBookDialog" id="favDialog">
-    <form class="addBookForm">
+  <dialog class="add-book-dialog" id="favDialog">
+    <form class="add-book-form">
       <!-- Book information fields -->
-      <div class="addBookFields">
-        <div class="bookTitleField">
+      <div class="add-book-fields">
+        <div class="book-title-field">
           <label for="bookTitle">Title</label>
           <input id="bookTitle" name="bookTitle" type="text">
         </div>
-        <div class="bookAuthorField">
+        <div class="book-author-field">
           <label for="bookAuthor">Author</label>
-          <input id="bookAuthor" name="bookAuthor" type="text">
+          <input id="book_Author" name="bookAuthor" type="text">
         </div>
-        <div class="bookPagesField">
+        <div class="book-pages-field">
           <label for="bookPages">Pages</label>
           <input id="bookPages" name="bookPages" type="number" min="1" max="9999">
         </div>
-        <div class="bookStatusField">
+        <div class="book-status-field">
           <input id="bookStatus" name="bookStatus" type="checkbox" value="read-status">
           <label for="bookStatus">Already read the book?</label>
         </div>
-        <div class="addBookButtonsField">
-          <button class="modalBtn" id="cancelBtn" value="cancel" formmethod="dialog">Cancel</button>
-          <button class="modalBtn" id="confirmBtn" value="default">Confirm</button>
+        <div class="add-book-btns-field">
+          <button class="modal-btn" id="cancelBtn" value="cancel" formmethod="dialog">Cancel</button>
+          <button class="modal-btn" id="confirmBtn" value="default">Confirm</button>
         </div>
     </form>
   </dialog>

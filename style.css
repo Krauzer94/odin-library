@@ -64,12 +64,12 @@ input[type=checkbox] {
 }
 
 /* Dialog box element */
-.addBookDialog {
+.add-book-dialog {
   border-radius: 8px;
 }
 
 /* Add book form section */
-.addBookForm {
+.add-book-form {
   height: 350px;
   width: 420px;
   padding: 12px 24px;
@@ -77,7 +77,7 @@ input[type=checkbox] {
 }
 
 /* Form fields container */
-.addBookFields {
+.add-book-fields {
   display: grid;
   grid-template-rows: repeat(3, 1fr) 0.3fr 0.75fr;
   gap: 16px;
@@ -85,26 +85,28 @@ input[type=checkbox] {
 }
 
 /* Labels and inputs positioning */
-.bookTitleField, .bookAuthorField, .bookPagesField {
+.book-title-field,
+.book-author-field,
+.book-pages-field {
   display: grid;
   grid-template-rows: 1fr 2fr;
 }
 
 /* Read status field */
-.bookStatusField {
+.book-status-field {
   display: grid;
   grid-template-columns: 1fr 9fr;
 }
 
 /* Modal buttons spacing */
-.addBookButtonsField {
+.add-book-btns-field {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap:24px;
 }
 
 /* Modal buttons defaults */
-.modalBtn {
+.modal-btn {
   font-weight: 600;
   font-size: 16px;
   border-radius: 8px;
