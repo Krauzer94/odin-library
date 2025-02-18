@@ -85,8 +85,8 @@ const outputBox = document.querySelector("output");
 const selectEl = favDialog.querySelector("select");
 const confirmBtn = favDialog.querySelector("#confirmBtn");
 
-// Trigger to apply modal blur effect
-const pageContent = document.querySelector("body");
+// Modal blur effect trigger
+const pageContent = document.getElementById('pageContent');
 
 // "Show the dialog" button opens the <dialog> modally
 showButton.addEventListener("click", () => {
@@ -100,7 +100,7 @@ favDialog.addEventListener("close", (e) => {
     favDialog.returnValue === "default"
       ? "No return value."
       : `ReturnValue: ${favDialog.returnValue}.`; // Have to check for "default" rather than empty string
-  pageContent.classList.remove("modal-blur");
+      pageContent.classList.remove("modal-blur");
 });
 
 // Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.
