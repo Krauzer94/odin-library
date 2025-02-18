@@ -124,3 +124,9 @@ input[type=checkbox] {
   height: 40px;
   width: 180px;
 }
+
+/* Apply blur modal trigger */
+.modal-blur {
+  filter: blur(5px);
+  pointer-events: none;
+}
