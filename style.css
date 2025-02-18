@@ -79,8 +79,8 @@ input[type=checkbox] {
 /* Form fields container */
 .addBookFields {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  gap: 24px;
+  grid-template-rows: repeat(3, 1fr) 0.3fr 0.75fr;
+  gap: 16px;
   background-color: #404040;
 }
 
@@ -96,12 +96,19 @@ input[type=checkbox] {
   grid-template-columns: 1fr 9fr;
 }
 
+/* Modal buttons spacing */
+.addBookButtonsField {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:24px;
+}
+
 /* Modal buttons defaults */
 .modalBtn {
+  font-weight: 600;
+  font-size: 16px;
   border-radius: 8px;
   color: white;
-  height: 40px;
-  width: 180px;
 }
 
 /* Cancel and confirm buttons */
