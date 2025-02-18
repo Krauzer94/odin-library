@@ -22,22 +22,27 @@
     <form class="add-book-form">
       <!-- Book information fields -->
       <div class="add-book-fields">
+        <!-- Title input -->
         <div class="book-title-field">
           <label for="bookTitle">Title</label>
           <input id="bookTitle" name="bookTitle" type="text">
         </div>
+        <!-- Author input -->
         <div class="book-author-field">
           <label for="bookAuthor">Author</label>
           <input id="book_Author" name="bookAuthor" type="text">
         </div>
+        <!-- Number of pages input -->
         <div class="book-pages-field">
           <label for="bookPages">Pages</label>
           <input id="bookPages" name="bookPages" type="number" min="1" max="9999">
         </div>
+        <!-- Status: read or not read -->
         <div class="book-status-field">
           <input id="bookStatus" name="bookStatus" type="checkbox" value="read-status">
           <label for="bookStatus">Already read the book?</label>
         </div>
+        <!-- Confirm/Cancel buttons -->
         <div class="add-book-btns-field">
           <button class="cancel-btn" id="cancelBtn" value="cancel" formmethod="dialog">Cancel</button>
           <button class="confirm-btn" id="confirmBtn" value="default">Confirm</button>
