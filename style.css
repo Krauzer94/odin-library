@@ -71,6 +71,18 @@ p {
   background-color: #404040;
 }
 
+/* Labels and inputs positioning */
+.bookTitleField, .bookAuthorField, .bookPagesField {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+/* Read status field */
+.bookStatusField {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+
 /* Input fields defaults */
 input {
   color: black;
