@@ -114,3 +114,13 @@ input[type=checkbox] {
 /* Cancel and confirm buttons */
 .cancel-btn  { background-color: #C83D2E; }
 .confirm-btn { background-color: #4A90E2; }
+
+/* Temporary trigger for modal */
+.show-dialog-btn {
+  border-radius: 8px;
+  background-color: #4A90E2;
+  font-weight: 600;
+  font-size: 16px;
+  height: 40px;
+  width: 180px;
+}
