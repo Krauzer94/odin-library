@@ -103,16 +103,14 @@ input[type=checkbox] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap:24px;
-}
-
-/* Modal buttons defaults */
-.modal-btn {
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 8px;
-  color: white;
+  > button {
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    color: white;
+  }
 }
 
 /* Cancel and confirm buttons */
-#cancelBtn  { background-color: #C83D2E; }
-#confirmBtn { background-color: #4A90E2; }
+.cancel-btn  { background-color: #C83D2E; }
+.confirm-btn { background-color: #4A90E2; }
