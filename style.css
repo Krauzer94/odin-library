@@ -13,6 +13,24 @@ body {
   padding: 0;
 }
 
+/* Spacing for text clarity */
+p {
+  padding: 4px 0px;
+}
+
+/* Input fields defaults */
+input {
+  color: black;
+  border-radius: 8px;
+  padding: 12px 6px;
+}
+
+/* Checkbox minimum size */
+input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+}
+
 /* Books temporary displays */
 .library-shelf {
   padding: 12px 24px;
@@ -26,11 +44,6 @@ body {
   border: 5px solid orange;
   border-radius: 8px;
   background-color: #303030;
-}
-
-/* Spacing for text clarity */
-p {
-  padding: 4px 0px;
 }
 
 /* Add book section */
@@ -83,13 +96,6 @@ p {
   grid-template-columns: 1fr 9fr;
 }
 
-/* Input fields defaults */
-input {
-  color: black;
-  border-radius: 8px;
-  padding: 12px 6px;
-}
-
 /* Modal buttons defaults */
 .modalBtn {
   border-radius: 8px;
@@ -101,9 +107,3 @@ input {
 /* Cancel and confirm buttons */
 #cancelBtn  { background-color: #C83D2E; }
 #confirmBtn { background-color: #4A90E2; }
-
-/* Checkbox minimum size */
-input[type=checkbox] {
-  width: 24px;
-  height: 24px;
-}
