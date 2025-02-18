@@ -24,7 +24,7 @@ body {
   padding: 12px 24px;
   margin: 12px 24px;
   border: 5px solid orange;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: #303030;
 }
 
@@ -46,13 +46,13 @@ p {
   font-weight: 600;
   color: black;
   padding: 12px 24px;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: #1DA1F2;
 }
 
 /* Dialog box element */
 .addBookDialog {
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 /* Add book form section */
@@ -66,8 +66,7 @@ p {
 /* Form fields container */
 .addBookFields {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 24px;
   background-color: #404040;
 }
@@ -75,7 +74,7 @@ p {
 /* Input fields defaults */
 input {
   color: black;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 12px 6px;
 }
 
