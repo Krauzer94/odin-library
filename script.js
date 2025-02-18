@@ -100,7 +100,7 @@ favDialog.addEventListener("close", (e) => {
     favDialog.returnValue === "default"
       ? "No return value."
       : `ReturnValue: ${favDialog.returnValue}.`; // Have to check for "default" rather than empty string
-      pageContent.classList.remove("modal-blur");
+  pageContent.classList.remove("modal-blur");
 });
 
 // Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.
