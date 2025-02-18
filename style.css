@@ -57,8 +57,8 @@ p {
 
 /* Add book form section */
 .addBookForm {
-  max-height: 350px;
-  max-width: 425px;
+  height: 350px;
+  width: 420px;
   padding: 12px 24px;
   background-color: #404040;
 }
@@ -79,10 +79,17 @@ input {
   padding: 12px 6px;
 }
 
-/* Temporary for visualization */
-.blackBtn, #showDialog {
-  color: black;
+/* Modal buttons defaults */
+.modalBtn {
+  border-radius: 8px;
+  color: white;
+  height: 40px;
+  width: 180px;
 }
+
+/* Cancel and confirm buttons */
+#cancelBtn  { background-color: #C83D2E; }
+#confirmBtn { background-color: #4A90E2; }
 
 /* Checkbox minimum size */
 input[type=checkbox] {
