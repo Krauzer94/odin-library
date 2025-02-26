@@ -73,22 +73,22 @@ addBookToLibrary("Marcus Aurelius", "Meditations", 231, true);
 // Manually display the added books
 displayMyLibrary(myLibrary);
 
-// TODO: add book via button interaction
-const addBookBtn = document.querySelector('.add-book-btn');
-addBookBtn.addEventListener('click', () => {
-  alert('TODO: add book via button interaction');
-});
-
-const showButton = document.getElementById("showDialog");
+// Book adding modal batch query
+const pageContent = document.getElementById('pageContent');
 const favDialog = document.getElementById("favDialog");
 const outputBox = document.querySelector("output");
 const selectEl = favDialog.querySelector("select");
 const confirmBtn = favDialog.querySelector("#confirmBtn");
 
-// Modal blur effect trigger
-const pageContent = document.getElementById('pageContent');
+// "Add book" button opens the <dialog> modal
+const addBookBtn = document.getElementById("addBookBtn");
+addBookBtn.addEventListener("click", () => {
+  favDialog.showModal();
+  pageContent.classList.add("modal-blur");
+});
 
-// "Show the dialog" button opens the <dialog> modally
+// Temporary "Show the dialog" trigger for modal
+const showButton = document.getElementById("showDialogBtn");
 showButton.addEventListener("click", () => {
   favDialog.showModal();
   pageContent.classList.add("modal-blur");
