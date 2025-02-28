@@ -87,13 +87,6 @@ addBookBtn.addEventListener("click", () => {
   pageContent.classList.add("modal-blur");
 });
 
-// Temporary "Show the dialog" trigger for modal
-const showButton = document.getElementById("showDialogBtn");
-showButton.addEventListener("click", () => {
-  favDialog.showModal();
-  pageContent.classList.add("modal-blur");
-});
-
 // "Cancel" button closes the dialog without submitting because of [formmethod="dialog"], triggering a close event.
 favDialog.addEventListener("close", (e) => {
   outputBox.value =
