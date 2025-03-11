@@ -31,6 +31,12 @@ input[type=checkbox] {
   height: 24px;
 }
 
+/* Focus status border */
+input:focus {
+  /* border-color: yellow; */
+  outline: none;
+}
+
 /* Reposition dialog modal */
 dialog {
   position: fixed;
