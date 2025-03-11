@@ -11,7 +11,7 @@ function Book(author, title, pages, status) {
 
   // Display attributes when printed
   this.toString = function() {
-    return `${this.title}\nAuthor: ${this.author}\nPages: ${this.pages}\nStatus: ${this.status ? 'Read' : 'Not read'}`;
+    return `${this.title}\nAuthor: ${this.author}\nPages: ${this.pages}\nStatus: ${this.status ? 'Read' : 'Not read'}\nUUID: ${this.id}`;
   };
 }
 
