@@ -65,10 +65,16 @@ dialog {
 .add-book-btn {
   font-size: 24px;
   font-weight: 600;
-  color: black;
+  color: #F2F2F2;
   padding: 12px 24px;
+  border: none;
   border-radius: 8px;
   background-color: #1DA1F2;
+}
+
+/* Add book on hover */
+.add-book-btn:hover {
+  background-color: #136EA5;
 }
 
 /* Dialog box element */
@@ -110,7 +116,7 @@ dialog {
 .add-book-btns-field {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:24px;
+  gap: 24px;
   > button {
     font-weight: 550;
     font-size: 16px;
@@ -119,11 +125,11 @@ dialog {
   }
 }
 
-/* Cancel/Confirm btns regular */
+/* Cancel+Confirm btns regular */
 .cancel-btn  { background-color: #C83D2E; }
 .confirm-btn { background-color: #4A90E2; }
 
-/* Cancel/Confirm btns hover */
+/* Cancel+Confirm btns hover */
 .cancel-btn:hover  { background-color: #C0392B; }
 .confirm-btn:hover { background-color: #357ABD; }
 
