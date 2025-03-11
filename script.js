@@ -3,7 +3,7 @@ const myLibrary = [];
 
 // Constructor for the Book object
 function Book(author, title, pages, status) {
-  // this.id = id; Automatically generated using the index
+  this.id = crypto.randomUUID(); // Generate a unique ID
   this.author = author;
   this.title = title;
   this.pages = pages;
