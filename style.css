@@ -74,7 +74,7 @@ dialog {
 
 /* Add book on hover */
 .add-book-btn:hover {
-  background-color: #136EA5;
+  background-color: #396FAF;
 }
 
 /* Dialog box element */
@@ -129,9 +129,15 @@ dialog {
 .cancel-btn  { background-color: #C83D2E; }
 .confirm-btn { background-color: #4A90E2; }
 
+/* Remove Calcel+Confirm borders */
+.cancel-btn,
+.confirm-btn {
+  border: none;
+}
+
 /* Cancel+Confirm btns hover */
-.cancel-btn:hover  { background-color: #C0392B; }
-.confirm-btn:hover { background-color: #357ABD; }
+.cancel-btn:hover  { background-color: #942D22; }
+.confirm-btn:hover { background-color: #396FAF; }
 
 /* Temporary trigger for modal */
 .show-dialog-btn {
