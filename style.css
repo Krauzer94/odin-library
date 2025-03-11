@@ -36,7 +36,6 @@ input[type=checkbox] {
 /* Focus status border */
 input:focus {
   border-color: blue;
-  border-width: 2px;
   outline: none;
 }
 
