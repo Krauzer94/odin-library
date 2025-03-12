@@ -27,12 +27,6 @@ input {
   padding: 12px 6px;
 }
 
-/* Checkbox minimum size */
-input[type=checkbox] {
-  width: 24px;
-  height: 24px;
-}
-
 /* Focus status border */
 input:focus {
   border-color: blue;
