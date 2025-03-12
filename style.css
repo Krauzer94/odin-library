@@ -21,15 +21,14 @@ p {
 /* Input fields defaults */
 input {
   color: black;
-  border-color: lightgray;
-  border-width: 3px;
+  border: 2px solid blue;
   border-radius: 8px;
   padding: 12px 6px;
 }
 
 /* Focus status border */
 input:focus, input[type="checkbox"]:focus {
-  outline: 3px solid blue;
+  outline: 2px solid blue;
 }
 
 /* Reposition dialog modal */
