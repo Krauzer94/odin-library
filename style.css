@@ -21,6 +21,7 @@ p {
 /* Input fields defaults */
 input {
   color: black;
+  font-size: 16px;
   border: 2px solid blue;
   border-radius: 8px;
   padding: 12px 6px;
