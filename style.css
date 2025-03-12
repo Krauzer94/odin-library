@@ -28,9 +28,8 @@ input {
 }
 
 /* Focus status border */
-input:focus {
-  border-color: blue;
-  outline: none;
+input:focus, input[type="checkbox"]:focus {
+  outline: 3px solid blue;
 }
 
 /* Reposition dialog modal */
