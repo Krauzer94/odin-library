@@ -104,7 +104,7 @@ confirmBtn.addEventListener("click", (event) => {
   const title = document.getElementById("bookTitle").value.trim();
   const author = document.getElementById("book_Author").value.trim();
   const pages = parseInt(document.getElementById("bookPages").value);
-  const status = document.getElementById("bookStatus").checked; // Checkbox value is a boolean
+  const status = document.getElementById("bookStatus").checked;
   
   // Validate input
   if (!title || !author || isNaN(pages) || pages <= 0) {
@@ -122,6 +122,8 @@ confirmBtn.addEventListener("click", (event) => {
 
   // Close the dialog
   favDialog.close();
+
+  // Remove blur after the dialog is closed
   pageContent.classList.remove("modal-blur");
 
   // Reset form fields
