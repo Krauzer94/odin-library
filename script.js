@@ -116,8 +116,7 @@ confirmBtn.addEventListener("click", (event) => {
   addBookToLibrary(author, title, pages, status);
 
   // Clear previous display and update the UI
-  // TODO: remove this insecure innerHTML module
-  document.querySelector('.library-shelf').innerHTML = "";
+  document.querySelector('.library-shelf').textContent = "";
   displayMyLibrary(myLibrary);
 
   // Close the dialog
