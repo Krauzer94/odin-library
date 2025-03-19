@@ -96,9 +96,33 @@ favDialog.addEventListener("close", (e) => {
   pageContent.classList.remove("modal-blur");
 });
 
-// Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.
+// Create a new book based on user input
 confirmBtn.addEventListener("click", (event) => {
-  event.preventDefault(); // We don't want to submit this fake form
-  favDialog.close(selectEl.value); // Have to send the select box value here.
+  event.preventDefault(); // Prevent form submission
+  
+  // Get user input
+  const title = document.getElementById("bookTitle").value.trim();
+  const author = document.getElementById("book_Author").value.trim();
+  const pages = parseInt(document.getElementById("bookPages").value);
+  const status = document.getElementById("bookStatus").checked; // Checkbox value is a boolean
+  
+  // Validate input
+  if (!title || !author || isNaN(pages) || pages <= 0) {
+    alert("Please fill out all fields correctly.");
+    return;
+  }
+
+  // Add new book to library
+  addBookToLibrary(author, title, pages, status);
+
+  // Clear previous display and update the UI
+  document.querySelector('.library-shelf').innerHTML = "";
+  displayMyLibrary(myLibrary);
+
+  // Close the dialog
+  favDialog.close();
   pageContent.classList.remove("modal-blur");
+
+  // Reset form fields
+  document.querySelector(".add-book-form").reset();
 });
