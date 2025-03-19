@@ -40,19 +40,19 @@ function displayMyLibrary(myLibraryArray) {
 
     // Create the book title element
     const libraryBookTitle = document.createElement('p');
-    libraryBookTitle.textContent = `Title: ${book.title}`;
+    libraryBookTitle.textContent = `${book.title}`;
 
     // Create the book author element
     const libraryBookAuthor = document.createElement('p');
-    libraryBookAuthor.textContent = `Author: ${book.author}`;
+    libraryBookAuthor.textContent = `${book.author}`;
 
     // Create the book pages element
     const libraryBookPages = document.createElement('p');
-    libraryBookPages.textContent = `Pages: ${book.pages}`;
+    libraryBookPages.textContent = `${book.pages} pages`;
 
     // Create the book read status
     const libraryBookStatus = document.createElement('p');
-    libraryBookStatus.textContent = `Status: ${book.status ? 'Read' : 'Not read'}`;
+    libraryBookStatus.textContent = `${book.status ? 'Read' : 'Not read'}`;
 
     // Add created elements into the page
     libraryBook.appendChild(libraryBookTitle);
