@@ -76,7 +76,6 @@ displayMyLibrary(myLibrary);
 // Book adding modal batch query
 const pageContent = document.getElementById('pageContent');
 const favDialog = document.getElementById("favDialog");
-const outputBox = document.querySelector("output");
 const selectEl = favDialog.querySelector("select");
 const confirmBtn = favDialog.querySelector("#confirmBtn");
 
@@ -87,12 +86,8 @@ addBookBtn.addEventListener("click", () => {
   pageContent.classList.add("modal-blur");
 });
 
-// "Cancel" button closes the dialog without submitting because of [formmethod="dialog"], triggering a close event.
-favDialog.addEventListener("close", (e) => {
-  outputBox.value =
-    favDialog.returnValue === "default"
-      ? "No return value."
-      : `ReturnValue: ${favDialog.returnValue}.`; // Have to check for "default" rather than empty string
+// "Cancel" button closes the form dialog
+favDialog.addEventListener("close", () => {
   pageContent.classList.remove("modal-blur");
 });
 
