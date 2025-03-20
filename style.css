@@ -64,6 +64,7 @@ dialog {
   color: white;
   background-color: #C83D2E;
 }
+.remove-book-btn:hover { background-color: #942D22; }
 
 /* Add book section */
 .add-book {
