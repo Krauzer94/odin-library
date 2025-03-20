@@ -71,8 +71,8 @@ function displayMyLibrary(myLibraryArray) {
       libraryBookAuthor,
       libraryBookPages,
       libraryBookStatus,
-      removeBookButton,
       toggleStatusButton,
+      removeBookButton,
     );
 
     // Add created book into the main shelf
