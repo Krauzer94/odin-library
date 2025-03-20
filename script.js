@@ -35,6 +35,7 @@ function displayMyLibrary(myLibraryArray) {
     // Main book div to add each book
     const libraryBook = document.createElement('div')
     libraryBook.classList.add('library-book');
+    libraryBook.setAttribute('data-id', book.id); // Store unique ID
 
     // Create the book title element
     const libraryBookTitle = document.createElement('p');
