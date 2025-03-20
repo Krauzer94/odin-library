@@ -53,12 +53,17 @@ function displayMyLibrary(myLibraryArray) {
 
     // Create the book read status
     const libraryBookStatus = document.createElement('p');
-    libraryBookStatus.textContent = `${book.status ? 'Read' : 'Not read'}`;
+    libraryBookStatus.textContent = `Status: ${book.status ? 'Read' : 'Not read'}`;
 
     // Create the Remove book button
     const removeBookButton = document.createElement('button');
     removeBookButton.textContent = `Remove`;
     removeBookButton.classList.add('remove-book-btn');
+
+    // Create the Toggle Status button
+    const toggleStatusButton = document.createElement('button');
+    toggleStatusButton.textContent = `Toggle Status`;
+    toggleStatusButton.classList.add('toggle-status-btn');
 
     // Add event listener to remove book
     removeBookButton.addEventListener('click', () => removeBook(book.id));
@@ -69,7 +74,8 @@ function displayMyLibrary(myLibraryArray) {
       libraryBookAuthor,
       libraryBookPages,
       libraryBookStatus,
-      removeBookButton
+      removeBookButton,
+      toggleStatusButton,
     );
 
     // Add created book into the main shelf
