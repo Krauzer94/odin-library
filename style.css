@@ -58,7 +58,6 @@ dialog {
 /* Remove book button */
 .remove-book-btn {
   padding: 6px 12px;
-  border: none;
   font-weight: 550;
   font-size: 16px;
   border-radius: 4px;
@@ -79,8 +78,6 @@ dialog {
   font-weight: 600;
   color: #F2F2F2;
   padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
   background-color: #1DA1F2;
 }
 
@@ -134,20 +131,19 @@ dialog {
   > button {
     font-weight: 550;
     font-size: 16px;
-    border-radius: 8px;
     color: white;
   }
+}
+
+/* Button main defaults */
+button {
+  border: none;
+  border-radius: 8px;
 }
 
 /* Cancel+Confirm btns regular */
 .cancel-btn  { background-color: #C83D2E; }
 .confirm-btn { background-color: #4A90E2; }
-
-/* Remove Calcel+Confirm borders */
-.cancel-btn,
-.confirm-btn {
-  border: none;
-}
 
 /* Cancel+Confirm btns hover */
 .cancel-btn:hover  { background-color: #942D22; }
