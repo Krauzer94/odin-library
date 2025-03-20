@@ -55,16 +55,23 @@ dialog {
   background-color: #F5F5DC;
 }
 
-/* Remove book button */
-.remove-book-btn {
+/* Remove/Toggle buttons defaults */
+.remove-book-btn, .toggle-status-btn {
   padding: 6px 12px;
+  margin-right: 12px;
   font-weight: 550;
   font-size: 16px;
   border-radius: 4px;
   color: white;
-  background-color: #C83D2E;
 }
+
+/* Remove book button specifics */
+.remove-book-btn { background-color: #C83D2E; }
 .remove-book-btn:hover { background-color: #942D22; }
+
+/* Toggle status button specifics */
+.toggle-status-btn { background-color: #30C730 }
+.toggle-status-btn:hover { background-color: #239323 }
 
 /* Add book section */
 .add-book {
