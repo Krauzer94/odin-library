@@ -112,7 +112,11 @@ addBookBtn.addEventListener("click", () => {
 
 // "Cancel" button closes the form dialog
 favDialog.addEventListener("close", () => {
+  // Remove blur after the dialog is closed
   pageContent.classList.remove("modal-blur");
+
+  // Reset form fields
+  document.querySelector(".add-book-form").reset();
 });
 
 // Create a new book based on user input
