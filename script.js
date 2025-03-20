@@ -15,6 +15,11 @@ function Book(author, title, pages, status) {
   };
 }
 
+// Method to toggle book status
+Book.prototype.toggleStatus = function() {
+  this.status = !this.status;
+};
+
 // Add Book objects to the library
 function addBookToLibrary(author, title, pages, status) {
   const newBook = new Book(author, title, pages, status);
