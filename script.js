@@ -60,11 +60,13 @@ function displayMyLibrary(myLibraryArray) {
     removeBookButton.classList.add('remove-book-btn');
 
     // Add created elements into the page
-    libraryBook.appendChild(libraryBookTitle);
-    libraryBook.appendChild(libraryBookAuthor);
-    libraryBook.appendChild(libraryBookPages);
-    libraryBook.appendChild(libraryBookStatus);
-    libraryBook.appendChild(removeBookButton);
+    libraryBook.append(
+      libraryBookTitle,
+      libraryBookAuthor,
+      libraryBookPages,
+      libraryBookStatus,
+      removeBookButton
+    );
 
     // Add created book into the main shelf
     libraryShelf.appendChild(libraryBook);
