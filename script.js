@@ -65,9 +65,6 @@ function displayMyLibrary(myLibraryArray) {
     toggleStatusButton.textContent = `Toggle Status`;
     toggleStatusButton.classList.add('toggle-status-btn');
 
-    // Add event listener to remove book
-    removeBookButton.addEventListener('click', () => removeBook(book.id));
-
     // Add created elements into the page
     libraryBook.append(
       libraryBookTitle,
@@ -80,6 +77,9 @@ function displayMyLibrary(myLibraryArray) {
 
     // Add created book into the main shelf
     libraryShelf.appendChild(libraryBook);
+  
+    // Add event listener to remove book
+    removeBookButton.addEventListener('click', () => removeBook(book.id));
   });
 }
 
