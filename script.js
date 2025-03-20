@@ -95,24 +95,16 @@ function displayMyLibrary(myLibraryArray) {
 function removeBook(bookId) {
   // Find the book index and remove it from the array
   const bookIndex = myLibrary.findIndex(book => book.id === bookId);
-  if (bookIndex !== -1) {
-    myLibrary.splice(bookIndex, 1);
-  }
-
-  // Refresh the display
-  displayMyLibrary(myLibrary);
+  if (bookIndex !== -1) { myLibrary.splice(bookIndex, 1); }
+  displayMyLibrary(myLibrary); // Refresh the display
 }
 
 // Toggle book status (Read/Not read)
 function toggleStatus(bookId) {
   // Find the book by ID and toggle its status
   const book = myLibrary.find(book => book.id === bookId);
-  if (book) {
-    book.toggleStatus();
-  }
-
-  // Refresh the display
-  displayMyLibrary(myLibrary);
+  if (book) { book.toggleStatus(); }
+  displayMyLibrary(myLibrary); // Refresh the display
 }
 
 // Manually add a couple of books
