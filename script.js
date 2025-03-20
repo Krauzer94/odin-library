@@ -25,9 +25,7 @@ function addBookToLibrary(author, title, pages, status) {
 function displayMyLibrary(myLibraryArray) {
   // Print added books into the console
   console.log(`Books added to the library:`)
-  for (let i = 0; i < myLibraryArray.length; i++) {
-    console.log(`[#${[([i + 1])]}]: ${myLibraryArray[i]}`);
-  };
+  myLibraryArray.forEach((book, i) => console.log(`[#${i + 1}]: ${book}`));
 
   // Main book shelf display element
   const libraryShelf = document.querySelector('.library-shelf');
