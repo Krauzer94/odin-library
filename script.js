@@ -55,11 +55,17 @@ function displayMyLibrary(myLibraryArray) {
     const libraryBookStatus = document.createElement('p');
     libraryBookStatus.textContent = `${book.status ? 'Read' : 'Not read'}`;
 
+    // Create the Remove book button
+    const removeBookButton = document.createElement('button');
+    removeBookButton.textContent = `Remove`;
+    removeBookButton.classList.add('remove-book-btn');
+
     // Add created elements into the page
     libraryBook.appendChild(libraryBookTitle);
     libraryBook.appendChild(libraryBookAuthor);
     libraryBook.appendChild(libraryBookPages);
     libraryBook.appendChild(libraryBookStatus);
+    libraryBook.appendChild(removeBookButton);
 
     // Add created book into the main shelf
     libraryShelf.appendChild(libraryBook);
