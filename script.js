@@ -85,6 +85,9 @@ function displayMyLibrary(myLibraryArray) {
   
     // Add event listener to remove book
     removeBookButton.addEventListener('click', () => removeBook(book.id));
+
+    // Add event listener to toggle status
+    toggleStatusButton.addEventListener('click', () => toggleStatus(book.id));
   });
 }
 
@@ -94,6 +97,18 @@ function removeBook(bookId) {
   const bookIndex = myLibrary.findIndex(book => book.id === bookId);
   if (bookIndex !== -1) {
     myLibrary.splice(bookIndex, 1);
+  }
+
+  // Refresh the display
+  displayMyLibrary(myLibrary);
+}
+
+// Toggle book status (Read/Not read)
+function toggleStatus(bookId) {
+  // Find the book by ID and toggle its status
+  const book = myLibrary.find(book => book.id === bookId);
+  if (book) {
+    book.toggleStatus();
   }
 
   // Refresh the display
