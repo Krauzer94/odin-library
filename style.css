@@ -153,16 +153,6 @@ dialog {
 .cancel-btn:hover  { background-color: #942D22; }
 .confirm-btn:hover { background-color: #396FAF; }
 
-/* Temporary trigger for modal */
-.show-dialog-btn {
-  border-radius: 8px;
-  background-color: #4A90E2;
-  font-weight: 600;
-  font-size: 16px;
-  height: 40px;
-  width: 180px;
-}
-
 /* Apply blur modal trigger */
 .modal-blur {
   filter: blur(5px);
