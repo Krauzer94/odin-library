@@ -23,7 +23,7 @@ function addBookToLibrary(author, title, pages, status) {
 
 // Display previously added books
 function displayMyLibrary(myLibraryArray) {
-  // // Temporarily output books into the console
+  // // Output books into the console (temporary validation)
   // console.log(`Books added to the library:`)
   // myLibraryArray.forEach((book, i) => console.log(`[#${i + 1}]: ${book}`));
 
