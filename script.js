@@ -59,6 +59,9 @@ function displayMyLibrary(myLibraryArray) {
     removeBookButton.textContent = `Remove`;
     removeBookButton.classList.add('remove-book-btn');
 
+    // Add event listener to remove book
+    removeBookButton.addEventListener('click', () => removeBook(book.id));
+
     // Add created elements into the page
     libraryBook.append(
       libraryBookTitle,
@@ -71,6 +74,18 @@ function displayMyLibrary(myLibraryArray) {
     // Add created book into the main shelf
     libraryShelf.appendChild(libraryBook);
   });
+}
+
+// Function to remove book from library
+function removeBook(bookId) {
+  // Find the book index and remove it from the array
+  const bookIndex = myLibrary.findIndex(book => book.id === bookId);
+  if (bookIndex !== -1) {
+    myLibrary.splice(bookIndex, 1);
+  }
+
+  // Refresh the display
+  displayMyLibrary(myLibrary);
 }
 
 // Manually add a couple of books
