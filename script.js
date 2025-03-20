@@ -29,6 +29,7 @@ function displayMyLibrary(myLibraryArray) {
 
   // Main book shelf display element
   const libraryShelf = document.querySelector('.library-shelf');
+  libraryShelf.textContent = ""; // Clear previous display
   
   // Create and inject book elements
   myLibraryArray.forEach(book => {
