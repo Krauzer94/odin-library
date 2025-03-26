@@ -35,7 +35,7 @@ function displayMyLibrary(myLibraryArray) {
   // Main book shelf display element
   const libraryShelf = document.querySelector('.library-shelf');
   libraryShelf.textContent = ""; // Clear previous display
-  
+
   // Create and inject book elements
   myLibraryArray.forEach(book => {
     // Main book div to add each book
@@ -47,6 +47,10 @@ function displayMyLibrary(myLibraryArray) {
     const libraryBookTitle = document.createElement('p');
     libraryBookTitle.style.fontWeight = 'bold';
     libraryBookTitle.textContent = `${book.title}`;
+
+    // Create book's details container
+    const libraryBookDetails = document.createElement('div');
+    libraryBookDetails.classList.add('library-book-details');
 
     // Create the book author element
     const libraryBookAuthor = document.createElement('p');
@@ -60,6 +64,17 @@ function displayMyLibrary(myLibraryArray) {
     const libraryBookStatus = document.createElement('p');
     libraryBookStatus.textContent = `Status: ${book.status ? 'Read' : 'Not read'}`;
 
+    // Add book details to it's container
+    libraryBookDetails.append(
+      libraryBookAuthor,
+      libraryBookPages,
+      libraryBookStatus,
+    );
+
+    // Create book card's buttons container
+    const libraryBookBtns = document.createElement('div');
+    libraryBookBtns.classList.add('library-book-buttons');
+
     // Create the Remove book button
     const removeBookButton = document.createElement('button');
     removeBookButton.textContent = `Remove`;
@@ -70,19 +85,22 @@ function displayMyLibrary(myLibraryArray) {
     toggleStatusButton.textContent = `Toggle Status`;
     toggleStatusButton.classList.add('toggle-status-btn');
 
-    // Add created elements into the page
-    libraryBook.append(
-      libraryBookTitle,
-      libraryBookAuthor,
-      libraryBookPages,
-      libraryBookStatus,
+    // Add buttons container to the book card
+    libraryBookBtns.append(
       toggleStatusButton,
       removeBookButton,
     );
 
+    // Add created elements into the page
+    libraryBook.append(
+      libraryBookTitle,
+      libraryBookDetails,
+      libraryBookBtns,
+    );
+
     // Add created book into the main shelf
     libraryShelf.appendChild(libraryBook);
-  
+
     // Add event listener to remove book
     removeBookButton.addEventListener('click', () => removeBook(book.id));
 
@@ -140,13 +158,13 @@ favDialog.addEventListener("close", () => {
 // Create a new book based on user input
 confirmBtn.addEventListener("click", (event) => {
   event.preventDefault(); // Prevent form submission
-  
+
   // Get user input
   const title = document.getElementById("bookTitle").value.trim();
   const author = document.getElementById("book_Author").value.trim();
   const pages = parseInt(document.getElementById("bookPages").value);
   const status = document.getElementById("bookStatus").checked;
-  
+
   // Validate input
   if (!title || !author || isNaN(pages) || pages <= 0) {
     alert("Please fill out all fields correctly.");
