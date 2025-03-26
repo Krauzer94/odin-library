@@ -83,9 +83,9 @@ dialog {
 }
 
 /* Remove/Toggle buttons defaults */
-.remove-book-btn, .toggle-status-btn {
+.remove-book-btn,
+.toggle-status-btn {
   padding: 6px 12px;
-  margin-right: 12px;
   font-weight: 550;
   font-size: 12px;
   border-radius: 4px;
