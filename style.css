@@ -67,6 +67,12 @@ dialog {
   background-color: #F5F5DC;
 }
 
+/* Book card title */
+.library-book-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /* Remove/Toggle buttons defaults */
 .remove-book-btn, .toggle-status-btn {
   padding: 6px 12px;
