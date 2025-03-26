@@ -40,10 +40,19 @@ dialog {
   transform: translate(-50%, -50%);
 }
 
+/* Detach background from the content */
+.page-background {
+  width: 100vw;
+  justify-items: center;
+}
+
 /* Books temporary displays */
 .library-shelf {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75vw;
   padding: 12px 24px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 /* Individual books displays */
