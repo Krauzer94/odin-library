@@ -50,12 +50,14 @@ dialog {
 /* Books cards container */
 .library-shelf {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 85vw;
+  grid-template-columns: repeat(3, 1fr);
+  width: 65vw;
 }
 
 /* Individual books cards */
 .library-book {
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
   font-size: 16px;
   min-height: 250px;
   padding: 12px 24px;
