@@ -47,21 +47,21 @@ dialog {
   justify-items: center;
 }
 
-/* Books temporary displays */
+/* Books cards container */
 .library-shelf {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 75vw;
-  padding: 12px 24px;
-  font-size: 18px;
+  width: 85vw;
 }
 
-/* Individual books displays */
+/* Individual books cards */
 .library-book {
+  font-size: 16px;
+  min-height: 250px;
   padding: 12px 24px;
   margin: 12px 24px;
-  border: 5px solid orange;
   border-radius: 8px;
+  border: 5px solid orange;
   background-color: #F5F5DC;
 }
 
@@ -70,7 +70,7 @@ dialog {
   padding: 6px 12px;
   margin-right: 12px;
   font-weight: 550;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 4px;
   color: white;
 }
