@@ -43,6 +43,7 @@ dialog {
 /* Detach background from the content */
 .page-background {
   width: 100vw;
+  height: 100vh;
   justify-items: center;
 }
 
@@ -156,6 +157,7 @@ dialog {
 button {
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Cancel+Confirm btns regular */
