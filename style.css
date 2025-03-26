@@ -75,6 +75,13 @@ dialog {
   font-weight: bold;
 }
 
+/* Book card buttons */
+.library-book-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Remove/Toggle buttons defaults */
 .remove-book-btn, .toggle-status-btn {
   padding: 6px 12px;
