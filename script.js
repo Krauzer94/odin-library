@@ -45,6 +45,7 @@ function displayMyLibrary(myLibraryArray) {
 
     // Create the book title element
     const libraryBookTitle = document.createElement('p');
+    libraryBookTitle.style.fontSize = '20px';
     libraryBookTitle.style.fontWeight = 'bold';
     libraryBookTitle.textContent = `${book.title}`;
 
