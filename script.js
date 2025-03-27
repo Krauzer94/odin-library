@@ -62,7 +62,13 @@ function displayMyLibrary(myLibraryArray) {
 
     // Create the book read status
     const libraryBookStatus = document.createElement('p');
-    libraryBookStatus.textContent = `❓Status: ${book.status ? 'Read' : 'Not read'}`;
+    libraryBookStatus.textContent = `❓Status: `;
+
+    // Create a span for the status text
+    const statusSpan = document.createElement('span');
+    statusSpan.textContent = book.status ? 'Read' : 'Not read';
+    statusSpan.classList.add(book.status ? 'status-read' : 'status-not-read');
+    libraryBookStatus.appendChild(statusSpan);
 
     // Add book details to it's container
     libraryBookDetails.append(
@@ -126,6 +132,8 @@ function toggleStatus(bookId) {
 }
 
 // Manually add a couple of books
+addBookToLibrary("Epictetus", "The Handbook", 123, true);
+addBookToLibrary("Marcus Aurelius", "Meditations", 231, true);
 addBookToLibrary("Epictetus", "The Handbook", 123, true);
 addBookToLibrary("Marcus Aurelius", "Meditations", 231, true);
 // addBookToLibrary("Neal Stephenson", "Snow Crash", 440, false);
