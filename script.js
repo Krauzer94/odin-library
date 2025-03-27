@@ -54,15 +54,15 @@ function displayMyLibrary(myLibraryArray) {
 
     // Create the book author element
     const libraryBookAuthor = document.createElement('p');
-    libraryBookAuthor.textContent = `${book.author}`;
+    libraryBookAuthor.textContent = `🙍‍♂️${book.author}`;
 
     // Create the book pages element
     const libraryBookPages = document.createElement('p');
-    libraryBookPages.textContent = `${book.pages} pages`;
+    libraryBookPages.textContent = `📑${book.pages} pages`;
 
     // Create the book read status
     const libraryBookStatus = document.createElement('p');
-    libraryBookStatus.textContent = `Status: ${book.status ? 'Read' : 'Not read'}`;
+    libraryBookStatus.textContent = `❓Status: ${book.status ? 'Read' : 'Not read'}`;
 
     // Add book details to it's container
     libraryBookDetails.append(
