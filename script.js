@@ -64,10 +64,10 @@ function displayMyLibrary(myLibraryArray) {
     const libraryBookStatus = document.createElement('p');
     libraryBookStatus.textContent = `❓Status: `;
 
-    // Create a span for the status text
+    // Dynamically change book status background color
     const statusSpan = document.createElement('span');
     statusSpan.textContent = book.status ? 'Read' : 'Not read';
-    statusSpan.classList.add(book.status ? 'status-read' : 'status-not-read');
+    statusSpan.classList.add(book.status ? 'status-read' : 'status-not-read', 'status-span');
     libraryBookStatus.appendChild(statusSpan);
 
     // Add book details to it's container

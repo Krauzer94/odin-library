@@ -202,3 +202,13 @@ button {
   filter: blur(5px);
   pointer-events: none;
 }
+
+/* Book status text defaults */
+.status-span {
+  border-radius: 4px;
+  padding: 0px 4px;
+}
+
+/* Book status dymanic coloring */
+.status-read { background-color: rgba(0, 255, 0, 50%); }
+.status-not-read { background-color: rgba(255, 0, 0, 25%); }
