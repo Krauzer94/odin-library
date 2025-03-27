@@ -105,8 +105,8 @@ dialog {
 .remove-book-btn:hover { background-color: #942D22; }
 
 /* Toggle status button specifics */
-.toggle-status-btn { background-color: #30C730 }
-.toggle-status-btn:hover { background-color: #239323 }
+.toggle-status-btn { background-color: #909090 }
+.toggle-status-btn:hover { background-color: #606060 }
 
 /* Add book section */
 .add-book {
@@ -205,6 +205,7 @@ button {
 
 /* Book status text defaults */
 .status-span {
+  font-weight: bold;
   border-radius: 4px;
   padding: 0px 4px;
 }
