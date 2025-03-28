@@ -25,13 +25,27 @@ body {
   background-color: #2C5364;
 }
 
-/* Header and footer specifics */
-.header { font-size: 48px; }
+/* Header specifics */
+.header {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* Footer specifics */
 .footer { font-size: 8px; }
 
 /* Spacing for text clarity */
 p {
   padding: 4px 0px;
+}
+
+/* Hyperlink defaults */
+a {
+  color: cyan;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 /* Input fields defaults */
