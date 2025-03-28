@@ -154,6 +154,22 @@ addBookBtn.addEventListener("click", () => {
   pageContent.classList.add("modal-blur");
 });
 
+// Dynamically position 'Add book' button
+document.addEventListener("scroll", () => {
+  const addBookElement = document.querySelector(".add-book");
+  const scrollHeight = document.documentElement.scrollHeight;
+  const scrollPosition = window.innerHeight + window.scrollY;
+  
+  // Calculate how close we are to the bottom
+  const distanceFromBottom = scrollHeight - scrollPosition;
+  
+  // Map the distance to the range [20px, 80px]
+  const bottomValue = Math.min(80, Math.max(20, 80 - distanceFromBottom / 1));
+
+  // Apply the new bottom position
+  addBookElement.style.bottom = `${bottomValue}px`;
+});
+
 // "Cancel" button closes the form dialog
 favDialog.addEventListener("close", () => {
   // Remove blur after the dialog is closed

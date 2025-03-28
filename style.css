@@ -146,7 +146,7 @@ dialog {
   align-items: center;
   /* Fixed floating container */
   position: fixed;
-  bottom: 80px;
+  bottom: 20px;
   right: 20px;
 }
 
