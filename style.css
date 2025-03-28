@@ -122,6 +122,8 @@ dialog {
 
 /* Add book button */
 .add-book-btn {
+  display: flex;
+  align-items: center;
   font-size: 18px;
   font-weight: 600;
   color: #F2F2F2;
@@ -132,6 +134,12 @@ dialog {
 /* Add book on hover */
 .add-book-btn:hover {
   background-color: #396FAF;
+}
+
+/* Add book symbolic icon */
+.add-book-icon {
+  padding-right: 6px;
+  width: 32px;
 }
 
 /* Dialog box element */
