@@ -29,6 +29,9 @@ body {
 .header {
   font-weight: bold;
   font-size: 32px;
+  /* Prevent shadow vertical overflow */
+  position: relative;
+  z-index: 10;
 }
 
 /* Footer specifics */
