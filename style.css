@@ -13,6 +13,22 @@ body {
   padding: 0;
 }
 
+/* Header and footer defaults */
+.header, .footer {
+  font-family: "Consolas";
+  color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  padding: 12px 0px;
+  background-color: #2C5364;
+}
+
+/* Header and footer specifics */
+.header { font-size: 48px; }
+.footer { font-size: 8px; }
+
 /* Spacing for text clarity */
 p {
   padding: 4px 0px;
@@ -116,7 +132,7 @@ dialog {
   align-items: center;
   /* Fixed floating container */
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
 }
 
