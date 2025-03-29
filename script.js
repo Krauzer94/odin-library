@@ -151,6 +151,10 @@ const addBookBtn = document.getElementById("addBookBtn");
 addBookBtn.addEventListener("click", () => {
   favDialog.showModal();
   pageContent.classList.add("modal-blur");
+
+  // Also add blur the header and footer
+  document.querySelector(".header").classList.add("modal-blur");
+  document.querySelector(".footer").classList.add("modal-blur");
 });
 
 // Dynamically position 'Add book' button
@@ -173,6 +177,10 @@ document.addEventListener("scroll", () => {
 favDialog.addEventListener("close", () => {
   // Remove blur after the dialog is closed
   pageContent.classList.remove("modal-blur");
+
+  // Also remove blue from the header and footer
+  document.querySelector(".header").classList.remove("modal-blur");
+  document.querySelector(".footer").classList.remove("modal-blur");
 
   // Reset form fields
   document.querySelector(".add-book-form").reset();
