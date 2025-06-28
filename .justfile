@@ -1,3 +1,5 @@
+set quiet
+
 _default:
     just --list
 
