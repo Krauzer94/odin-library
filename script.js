@@ -1,24 +1,27 @@
 // Store all Book created objects
 const myLibrary = [];
 
-// Constructor for the Book object
-function Book(author, title, pages, status) {
-  this.id = crypto.randomUUID(); // Generate a unique ID
-  this.author = author;
-  this.title = title;
-  this.pages = pages;
-  this.status = status; // 'Read' or 'Not read'
+// Class for the Book object
+class Book {
+  // Constructor metadata
+  constructor (author, title, pages, status) {
+    this.id = crypto.randomUUID(); // Generate a unique ID
+    this.author = author;
+    this.title = title;
+    this.pages = pages;
+    this.status = status; // 'Read' or 'Not read'
+  };
 
   // Display attributes when printed
-  this.toString = function() {
+  toString() {
     return `${this.title}\nAuthor: ${this.author}\nPages: ${this.pages}\nStatus: ${this.status ? 'Read' : 'Not read'}\nUUID: ${this.id}`;
-  };
-}
+  }
 
-// Method to toggle book status
-Book.prototype.toggleStatus = function() {
-  this.status = !this.status;
-};
+  // Method to toggle book status
+  toggleStatus() {
+    this.status = !this.status;
+  }
+}
 
 // Add Book objects to the library
 function addBookToLibrary(author, title, pages, status) {
